@@ -4,8 +4,12 @@
 <p><%= @recipe.cuisine %></p>
 <p><%= @recipe.difficulty %></p>
 <p><%= @recipe.cook_time_minutes %></p>
+
 <h3>Ingredientes</h3>
 <p><%= @recipe.ingredients %></p>
+
 <h3>Como Preparar</h3>
 <p><%= @recipe.cook_method %></p>
-<<%= link_to 'Voltar', root_path %>>
+
+<%= link_to 'Voltar', root_path %>
+<%= link_to 'Editar', edit_recipe_path(@recipe) %>
